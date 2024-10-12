@@ -16,7 +16,7 @@ def get_answer():
     return answer
 def again_button_click(browser):
     try:
-        again_button = browser.find_element(By.CLASS_NAME, "again-btn")
+        browser.find_element(By.CLASS_NAME, "again-btn")
         return True
     except NoSuchElementException:
         return False
